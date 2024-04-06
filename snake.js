@@ -5,7 +5,7 @@ window.onload = function(){
     var test = document.getElementById('snake-root');
     const buttonNewGame = document.createElement('button');
     buttonNewGame.setAttribute('class','button-6')
-    buttonNewGame.textContent = 'New Game';
+    buttonNewGame.textContent = 'Clique aqui para jogar';
     buttonNewGame.style.width = '12%';
     const imgOne = document.getElementById('source');
     const imgTwo = document.getElementById('source2');
