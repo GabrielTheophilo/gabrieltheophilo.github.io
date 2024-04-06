@@ -21,7 +21,7 @@ window.onload = function(){
 
 function gameStart(){
     
-    var test = document.getElementById('snake-root');
+    var test = document.getElementById('root');
     
     var src = document.createElement('canvas');
 
@@ -52,7 +52,7 @@ function gameStart(){
     var ay=Math.floor(Math.random()*gp);
     var aay=Math.floor(Math.random()*gp);
     var pontos = 0;
-    var vidas = 5;
+    var vidas = 500;
     var trail = [];
     tail = 5;
     
