@@ -129,7 +129,7 @@ function gameStart(){
             ay = Math.floor(Math.random()*gp);
         }
         if(aax==px && aay==py && count>400){
-            tail++;
+            tail+=7;
             pontos+=2;
             aax = Math.floor(Math.random()*qp);
             aay = Math.floor(Math.random()*gp);

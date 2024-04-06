@@ -1,13 +1,13 @@
 @keyframes backgroundColorPalette {
-    0% {   background-color: #531414; }
-    25% {  background-color: #5e461a;}
-    50% {  background-color: #2c4919;}
-    75% {  background-color: #171b4d;}
-    100% { background-color: #47163f; }
+    0% {   background-color: #180303; }
+    25% {  background-color: #221a09;}
+    50% {  background-color: #0f1b07;}
+    75% {  background-color: #090b24;}
+    100% { background-color: #24091f; }
 }
   
 .rotate-apply-keyframe {
-    animation: rotate 190s linear infinite;
+    animation: rotate 1900s linear infinite;
 }
 
 
