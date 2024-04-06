@@ -32,6 +32,7 @@ function generateNewChar(current, index){
         break
       case current.posX+offsetX<0:
         offsetX = offsetX+10
+        break
     }
     switch(current.posY){
       case current.posY+offsetY>window.innerHeight:
@@ -39,6 +40,7 @@ function generateNewChar(current, index){
         break
       case current.posY+offsetY<0:
         offsetY = offsetY+10
+        break
     }
     newX = current.posX + offsetX
     newY = current.posY + offsetY
@@ -61,7 +63,7 @@ function getContext(){
 function drawRect(){
     context.fillStyle = currentChar.color
     console.log(currentChar.posX)
-    context.fillRect(currentChar.posX,currentChar.posY,dimensions.width/700,dimensions.height/700)
+    context.fillRect(currentChar.posX,currentChar.posY,dimensions.width/300,dimensions.height/300)
 }
 
 function clear(){
@@ -95,13 +97,10 @@ var red = 255;
 var green = 0;
 var blue = 0;
 
-// Define the step size for color transition
 var step = 1;
 
-// Define the current color index
 var currentColorIndex = 0;
 
-// Define an array of colors in RGB format
 var colors = [
   [255, 0, 0],   // Red
   [255, 255, 0], // Yellow
@@ -109,36 +108,27 @@ var colors = [
   [0, 255, 255], // Cyan
   [0, 0, 255],   // Blue
   [255, 0, 255]  // Magenta
-  // Add more colors as needed
 ];
 
-// Define a function to transition the color
 function transitionColor() {
-  // Get the current color and the next color index
   var currentColor = colors[currentColorIndex];
   var nextColorIndex = (currentColorIndex + 1) % colors.length;
   var nextColor = colors[nextColorIndex];
   
-  // Calculate the transition color using linear interpolation (LERP)
   red = calculateTransitionValue(red, nextColor[0]);
   green = calculateTransitionValue(green, nextColor[1]);
   blue = calculateTransitionValue(blue, nextColor[2]);
   
-  // Convert the RGB values to a string
   var nextColorString = 'rgb(' + Math.round(red) + ', ' + Math.round(green) + ', ' + Math.round(blue) + ')';
   
-  // Perform the color transition
   currentChar.color = nextColorString;
   
-  // Perform any desired operations with the object and color
 
-  // Check if the transition is complete
   if (red === nextColor[0] && green === nextColor[1] && blue === nextColor[2]) {
     currentColorIndex = nextColorIndex;
   }
 }
 
-// Calculate the transition value using linear interpolation (LERP)
 function calculateTransitionValue(currentValue, targetValue) {
   if (currentValue < targetValue) {
     return Math.min(currentValue + step, targetValue);
@@ -148,7 +138,6 @@ function calculateTransitionValue(currentValue, targetValue) {
   return currentValue;
 }
 
-// Call the transitionColor function every 10 milliseconds
 setInterval(transitionColor, 10);
 
 
