@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!-<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Gabriel Theophilo - Desenvolvedor Web</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+            <div class="flex-apply flex-row justify-space-around">
+                <div class="logo flex-apply flex-row">
+                    <img id="logo-img"/>
+                    <h1 id="logo-title">Gabriel Theophilo</h1>
+                </div>
+                <div class="pagelinks align-items-center flex-apply flex-row gap-5">
+                    <div class="pagelink-group flex-apply flex-row align-items-baseline column-gap">
+                        <img class="place-self pagelink-logo"/>
+                        <p class="pagelink-title">Home</p>
+                    </div>
+                    <div class="pagelink-group flex-apply flex-row align-items-baseline column-gap">
+                        <i class="fa-solid fa-address-card"></i>
+                        <p class="pagelink-title">Sobre</p>
+                    </div>
+                    <div class="pagelink-group flex-apply flex-row align-items-baseline column-gap">
+                        <i class="fa-solid fa-list-check"></i>
+                        <p class="pagelink-title">Projetos</p>
+                    </div>
+                    <div class="pagelink-group flex-apply flex-row align-items-baseline column-gap">
+                        <i class="place-self fa-regular fa-envelope"></i>
+                        <p class="pagelink-title">Contato</p>
+                    </div>
+                    <!--<div class="pagelink-group flex-apply flex-row">
+                        <i class="place-self fa-regular fa-file"></i>
+                        <p class="pagelink-title">Currículo</p> 
+                    </div>-->
+                </div>
+            </div>
+        </header>
+        <main>
+            <content>
+                <div class="flex-apply">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <div class="flex-apply">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <div class="flex-apply">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <div class="flex-apply">
+                    <h1></h1>
+                    <p></p>
+                </div>
+            </content>
+            
+            <footer class="position-fixed left-zero bottom-zero full-width">
+                <div class="flex-apply flex-row justify-space-around align-items-center gap-5">
+                    <div class="flex-apply flex-colum place-items column-gap">
+                        <a href="github.com/GabrielTheophilo" referrerpolicy="no-referrer" target="_blank" class="text-decoration-none color-inherit"><i class="fa-brands fa-github"></i></a>
+                        <a href="github.com/GabrielTheophilo" referrerpolicy="no-referrer" target="_blank" class="text-decoration-none color-inherit"><h1 class="logo-title">Github</h1></a>
+                    </div>
+                    <div class="flex-apply flex-colum place-items column-gap">
+                        <a href="https://www.linkedin.com/in/gabriel-figueira-32053a110/" referrerpolicy="no-referrer" target="_blank" class="text-decoration-none color-inherit"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/gabriel-figueira-32053a110/" referrerpolicy="no-referrer" target="_blank" class="text-decoration-none color-inherit"><h1 class="logo-title">Linkedin</h1></a>
+                    </div>
+                    <div class="flex-apply flex-row place-items column-gap">
+                        <a href="about_blank" referrerpolicy="no-referrer" target="_blank" class="text-decoration-none color-inherit"><i class="fa-brands fa-discord"></i></a>
+                        <a href="about_blank" referrerpolicy="no-referrer" target="_blank" class="text-decoration-none color-inherit"><h1 class="logo-title">Discord</h1></a>
+                    </div>
+                    <div class="flex-apply flex-colum place-items column-gap">
+                        <a href="mailto:gabrieltsf10@gmail.com" target="_blank" class="text-decoration-none color-inherit"></a><i class="fa-regular fa-envelope"></i></a>
+                        <a href="mailto:gabrieltsf10@gmail.com" target="_blank" class="text-decoration-none color-inherit"></a><h1 class="logo-title">Email</h1></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <div id="snake-root"></div>
+        <img class="sprite" id="source" src="assets/snake.png">
+        <img class="sprite" id="source2" src="assets/food.png">
+        <script src="snake.js" async defer></script>
+    </body>
+</html>
