@@ -7,7 +7,7 @@
 }
   
 .rotate-apply-keyframe {
-    animation: rotate 1900s linear infinite;
+    animation: rotate 20s linear infinite;
 }
 
 
