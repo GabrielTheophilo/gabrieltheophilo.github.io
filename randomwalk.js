@@ -62,7 +62,6 @@ function getContext(){
 
 function drawRect(){
     context.fillStyle = currentChar.color
-    console.log(currentChar.posX)
     context.fillRect(currentChar.posX,currentChar.posY,dimensions.width/300,dimensions.height/300)
 }
 
@@ -72,7 +71,6 @@ function clear(){
 
 function main(){
     
-    console.log(currentChar.posY)
     drawRect()
     generateNewChar(currentChar)
     

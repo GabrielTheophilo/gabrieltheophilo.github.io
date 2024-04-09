@@ -2,7 +2,7 @@ window.onload = function(){
     function startGame(){
         gameStart();
     }
-    var test = document.getElementById('snake-root');
+    var test = document.getElementById('root');
     const buttonNewGame = document.createElement('button');
     buttonNewGame.setAttribute('class','button-6')
     buttonNewGame.textContent = 'Clique aqui para jogar';
